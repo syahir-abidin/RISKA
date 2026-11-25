@@ -1,0 +1,46 @@
+{
+  "name": "riska",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RISKA — platform multi-tenant untuk HAZOP, LOPA, FRA, HIRADC, FMEA dan COSO ERM",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "tsx scripts/seed.ts",
+    "vercel-build": "drizzle-kit push --force && next build"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "clsx": "2.1.1",
+    "drizzle-orm": "0.36.4",
+    "exceljs": "4.4.0",
+    "next": "14.2.35",
+    "next-auth": "4.24.11",
+    "pg": "8.13.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "server-only": "0.0.1",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "20.17.6",
+    "@types/pg": "8.11.10",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "autoprefixer": "10.4.20",
+    "drizzle-kit": "0.28.1",
+    "playwright": "1.56.0",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.15",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "vitest": "2.1.5"
+  }
+}
